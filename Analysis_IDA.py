@@ -4,10 +4,10 @@
 import openseespy.opensees as ops
 import numpy as np
 from getSa import getSa
-from MODEL_04 import build_model
-from Analysis_Modal_01 import modal_analysis
-from Analysis_Gravity_01 import gravity_analysis
-from runNRHA_01 import runNRHA
+from MODEL import build_model
+from Analysis_Modal import modal_analysis
+from Analysis_Gravity import gravity_analysis
+from runNRHA import runNRHA
 from datetime import datetime
 
 ops.wipe()
