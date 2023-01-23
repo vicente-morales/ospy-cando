@@ -115,13 +115,16 @@ def GMReader_VDC_tar(filename_list, event_names, in_dir=os.getcwd(), out_dir=os.
         file.close()
         n_lineas = len(lineas)
         evento = event_names[n]
-        canales_str = lineas[5].split()
-        num_canales = int(canales_str[7].strip()[-1])
-        # num_canales = int(lineas[5].split()[7].strip()[-1])
-        estacion = lineas[6].strip()
-        
+
         i = 0
-        for canal in range(num_canales):
+        end = False         
+        while end != True:        
+            linea_est_dir = lineas[i + 1].strip().split(',')
+            estacion = linea_est_dir.strip()
+            direccion = linea_est_dir[2].strip().
+        
+
+
             direccion_linea = lineas[7+i].strip().split()
             num_canal = int(direccion_linea[1].strip()[0])
             direccion = direccion_linea[2]
