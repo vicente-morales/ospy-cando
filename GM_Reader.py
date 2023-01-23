@@ -121,8 +121,9 @@ def GMReader_VDC_tar(filename_list, event_names, in_dir=os.getcwd(), out_dir=os.
         while end != True:        
             linea_est_dir = lineas[i + 1].strip().split(',')
             estacion = linea_est_dir.strip()
-            direccion = linea_est_dir[2].strip().
-        
+            dir_str_no = ['AST', 'EST', 'ORTH', 'OUTH', '-'] 
+            direccion = linea_est_dir[2].strip().replace('AST',"").replace('EST',"")
+            
 
 
             direccion_linea = lineas[7+i].strip().split()
