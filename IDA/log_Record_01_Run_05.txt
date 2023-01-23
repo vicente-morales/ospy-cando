@@ -1,0 +1,13 @@
+########## STARTING RUN #5 ##########
+-> IM: 0.4
+
+-> Creating Model
+-> Starting Gravity Analysis
+-> Starting RHA
+-> RHA Analysis Completed Successfully
+
+-> DT: 0.2907
+########## END OF RUN #6 ##########
+d in test()
+DirectIntegrationAnalysis::analyze() - the Algorithm failed at time 31.805
+OpenSees > analyze failed, returned: -3 error flag

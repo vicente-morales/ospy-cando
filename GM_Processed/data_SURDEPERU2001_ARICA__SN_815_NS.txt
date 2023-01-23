@@ -1,0 +1,7 @@
+Evento: SUR DE PERU 2001
+Estación: ARICA  S/N 815
+Canal: 1
+Direccion: NS
+Duración: 157.0
+Time Step: 0.005
+Puntos: 31400

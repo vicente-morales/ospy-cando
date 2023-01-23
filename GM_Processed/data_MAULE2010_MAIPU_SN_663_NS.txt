@@ -1,0 +1,7 @@
+Evento: MAULE 2010
+Estación: MAIPU S/N 663
+Canal: 2
+Direccion: NS
+Duración: 167.01
+Time Step: 0.01
+Puntos: 16701

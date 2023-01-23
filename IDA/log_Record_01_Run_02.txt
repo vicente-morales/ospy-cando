@@ -1,0 +1,178 @@
+########## STARTING RUN #2 ##########
+-> IM: 0.6
+
+-> Creating Model
+-> Starting Gravity Analysis
+-> Starting RHA
+-> RHA Analysis Completed Successfully
+
+-> DT: 0.5745
+########## END OF RUN #2 ##########
+d in test()
+DirectIntegrationAnalysis::analyze() - the Algorithm failed at time 31.205
+OpenSees > analyze failed, returned: -3 error flag
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 50 iterations  current Norm: 1.58686 (max: 0.0001, Norm deltaR: 28.3209)
+AcceleratedNewton::solveCurrentStep() -The ConvergenceTest object failed in test()
+DirectIntegrationAnalysis::analyze() - the Algorithm failed at time 31.2125
+OpenSees > analyze failed, returned: -3 error flag
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 50 iterations  current Norm: 0.000784529 (max: 0.0001, Norm deltaR: 0.930141)
+AcceleratedNewton::solveCurrentStep() -The ConvergenceTest object failed in test()
+DirectIntegrationAnalysis::analyze() - the Algorithm failed at time 31.21
+OpenSees > analyze failed, returned: -3 error flag
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 50 iterations  current Norm: 0.00836058 (max: 0.0001, Norm deltaR: 2.43197)
+AcceleratedNewton::solveCurrentStep() -The ConvergenceTest object failed in test()
+DirectIntegrationAnalysis::analyze() - the Algorithm failed at time 31.2137
+OpenSees > analyze failed, returned: -3 error flag
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 50 iterations  current Norm: 0.00209178 (max: 0.0001, Norm deltaR: 15.8429)
+AcceleratedNewton::solveCurrentStep() -The ConvergenceTest object failed in test()
+DirectIntegrationAnalysis::analyze() - the Algorithm failed at time 31.2162
+OpenSees > analyze failed, returned: -3 error flag
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 50 iterations  current Norm: 0.25425 (max: 0.0001, Norm deltaR: 1.48126)
+AcceleratedNewton::solveCurrentStep() -The ConvergenceTest object failed in test()
+DirectIntegrationAnalysis::analyze() - the Algorithm failed at time 31.2137
+OpenSees > analyze failed, returned: -3 error flag
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 50 iterations  current Norm: 0.0992875 (max: 0.0001, Norm deltaR: 2.44041)
+AcceleratedNewton::solveCurrentStep() -The ConvergenceTest object failed in test()
+DirectIntegrationAnalysis::analyze() - the Algorithm failed at time 31.2125
+OpenSees > analyze failed, returned: -3 error flag
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 0.00042332 (max: 0.0001, Norm deltaR: 1.03571)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 1.66194 (max: 0.0001, Norm deltaR: 559.098)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 6.00223 (max: 0.0001, Norm deltaR: 575.82)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 4.70772e+06 (max: 0.0001, Norm deltaR: 4394.94)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 8.99444e+06 (max: 0.0001, Norm deltaR: 4.55596e+06)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 7.65882e+08 (max: 0.0001, Norm deltaR: 4.38823e+06)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 4.77368e+09 (max: 0.0001, Norm deltaR: 1.44896e+07)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 7.01455e+08 (max: 0.0001, Norm deltaR: 5095.41)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 2.18537e+09 (max: 0.0001, Norm deltaR: 3359.9)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 4.93302e+08 (max: 0.0001, Norm deltaR: 14797.3)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 3.18666e+08 (max: 0.0001, Norm deltaR: 3333.78)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 3.0059e+08 (max: 0.0001, Norm deltaR: 3073.02)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 9.94886e+09 (max: 0.0001, Norm deltaR: 101510)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 8.26552e+08 (max: 0.0001, Norm deltaR: 65533.7)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 6.53931e+08 (max: 0.0001, Norm deltaR: 28414)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 2.04859e+08 (max: 0.0001, Norm deltaR: 2297.72)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 3.60913e+08 (max: 0.0001, Norm deltaR: 5061.31)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 2.6056e+09 (max: 0.0001, Norm deltaR: 7525.99)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 1.62426e+09 (max: 0.0001, Norm deltaR: 15368)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 4.0114e+12 (max: 0.0001, Norm deltaR: 1.49106e+07)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 4.18763e+09 (max: 0.0001, Norm deltaR: 14560.2)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 7.56385e+08 (max: 0.0001, Norm deltaR: 13925.5)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 9.15637e+08 (max: 0.0001, Norm deltaR: 8207.14)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 4.57682e+08 (max: 0.0001, Norm deltaR: 6156.19)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 1.73466e+09 (max: 0.0001, Norm deltaR: 29897.9)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 1.33603e+09 (max: 0.0001, Norm deltaR: 31124.2)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 1.90847e+09 (max: 0.0001, Norm deltaR: 43578.3)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 2.63771e+10 (max: 0.0001, Norm deltaR: 8.81788e+06)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 1.50469e+11 (max: 0.0001, Norm deltaR: 2.45304e+08)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 8.72207e+09 (max: 0.0001, Norm deltaR: 2.45171e+07)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 2.2912e+12 (max: 0.0001, Norm deltaR: 7.47095e+07)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 9.23285e+11 (max: 0.0001, Norm deltaR: 9.14981e+06)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 1.1265e+12 (max: 0.0001, Norm deltaR: 9.72387e+06)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 7.46615e+11 (max: 0.0001, Norm deltaR: 1.01107e+07)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 1.70914e+13 (max: 0.0001, Norm deltaR: 5.01591e+11)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 7.89862e+11 (max: 0.0001, Norm deltaR: 1.43127e+07)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 4.93396e+13 (max: 0.0001, Norm deltaR: 1.84821e+09)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 6.13678e+13 (max: 0.0001, Norm deltaR: 5.51629e+08)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 5.80457e+12 (max: 0.0001, Norm deltaR: 8.86936e+07)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 1.54649e+13 (max: 0.0001, Norm deltaR: 2.27329e+08)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 1.36027e+13 (max: 0.0001, Norm deltaR: 6.94249e+08)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 8.77385e+13 (max: 0.0001, Norm deltaR: 1.85632e+09)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 2.40123e+13 (max: 0.0001, Norm deltaR: 1.06323e+09)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 7.60613e+13 (max: 0.0001, Norm deltaR: 1.89468e+09)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 1.59107e+13 (max: 0.0001, Norm deltaR: 1.53407e+08)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 1.29358e+13 (max: 0.0001, Norm deltaR: 1.3586e+08)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 5.32662e+12 (max: 0.0001, Norm deltaR: 5.87195e+07)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 9.75229e+13 (max: 0.0001, Norm deltaR: 1.4946e+10)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 4.59292e+13 (max: 0.0001, Norm deltaR: 2.02614e+08)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 10 iterations  current Norm: 6.13151e+12 (max: 0.0001, Norm deltaR: 3.88894e+08)
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 50 iterations  current Norm: 6.13151e+12 (max: 0.0001, Norm deltaR: 3.88894e+08)
+Broyden::solveCurrentStep() -the ConvergenceTest object failed in test()
+DirectIntegrationAnalysis::analyze() - the Algorithm failed at time 31.2162
+OpenSees > analyze failed, returned: -3 error flag
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 50 iterations  current Norm: 0.00232995 (max: 0.0001, Norm deltaR: 7.19312)
+AcceleratedNewton::solveCurrentStep() -The ConvergenceTest object failed in test()
+DirectIntegrationAnalysis::analyze() - the Algorithm failed at time 31.2762
+OpenSees > analyze failed, returned: -3 error flag
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 50 iterations  current Norm: 0.000785622 (max: 0.0001, Norm deltaR: 0.717758)
+AcceleratedNewton::solveCurrentStep() -The ConvergenceTest object failed in test()
+DirectIntegrationAnalysis::analyze() - the Algorithm failed at time 31.5487
+OpenSees > analyze failed, returned: -3 error flag
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 50 iterations  current Norm: 0.0329254 (max: 0.0001, Norm deltaR: 14.3728)
+AcceleratedNewton::solveCurrentStep() -The ConvergenceTest object failed in test()
+DirectIntegrationAnalysis::analyze() - the Algorithm failed at time 31.5512
+OpenSees > analyze failed, returned: -3 error flag
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 50 iterations  current Norm: 0.38705 (max: 0.0001, Norm deltaR: 3.70648)
+AcceleratedNewton::solveCurrentStep() -The ConvergenceTest object failed in test()
+DirectIntegrationAnalysis::analyze() - the Algorithm failed at time 31.5537
+OpenSees > analyze failed, returned: -3 error flag
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 50 iterations  current Norm: 0.00374396 (max: 0.0001, Norm deltaR: 0.816682)
+AcceleratedNewton::solveCurrentStep() -The ConvergenceTest object failed in test()
+DirectIntegrationAnalysis::analyze() - the Algorithm failed at time 31.6612
+OpenSees > analyze failed, returned: -3 error flag
+WARNING: CTestNormDispIncr::test() - failed to converge 
+after: 50 iterations  current Norm: 0.0724551 (max: 0.0001, Norm deltaR: 0.810082)
+AcceleratedNewton::solveCurrentStep() -The ConvergenceTest object failed in test()
+DirectIntegrationAnalysis::analyze() - the Algorithm failed at time 31.6637
+OpenSees > analyze failed, returned: -3 error flag

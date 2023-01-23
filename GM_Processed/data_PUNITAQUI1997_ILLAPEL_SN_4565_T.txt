@@ -1,0 +1,7 @@
+Evento: PUNITAQUI 1997
+Estación: ILLAPEL S/N 4565
+Canal: 3
+Direccion: T
+Duración: 79.98
+Time Step: 0.005
+Puntos: 15996

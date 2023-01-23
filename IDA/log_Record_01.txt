@@ -1,0 +1,54 @@
+^^^^^^^^^^ STARTING IDA HTF ^^^^^^^^^^
+-> Registro: SURDEPERU2001_ARICA_COSTANERA_SN_5004_L
+
+########## STARTING RUN #1 ##########
+-> IM: 0.2
+-> Creating Model
+-> Starting Gravity Analysis
+-> Starting RHA
+-> DT: 0.1732
+########## END OF RUN #1 ##########
+
+########## STARTING RUN #2 ##########
+-> IM: 0.6
+-> Creating Model
+-> Starting Gravity Analysis
+-> Starting RHA
+-> DT: 0.5745
+########## END OF RUN #2 ##########
+
+########## STARTING RUN #3 ##########
+-> IM: 1.0
+-> Creating Model
+-> Starting Gravity Analysis
+-> Starting RHA
+-> Collapse (2) was found at 31.902s of 76.18s : tracing lower IM
+
+-> IM: 0.68
+-> Creating Model
+-> Starting Gravity Analysis
+-> Starting RHA
+-> DT: 0.7211
+########## END OF RUN #3 ##########
+
+########## STARTING RUN #4 ##########
+-> IM: 0.744
+-> Creating Model
+-> Starting Gravity Analysis
+-> Starting RHA
+-> Collapse (2) was found at 31.524s of 76.18s : starting filling IM
+-> DT: 0.8546
+########## END OF RUN #4 ##########
+
+########## STARTING RUN #5 ##########
+-> IM: 0.4
+-> Creating Model
+-> Starting Gravity Analysis
+-> Starting RHA
+-> DT: 0.2907
+########## END OF RUN #6 ##########
+
+-> Run analysis time (hh:mm:ss.ms) 0:15:36.570082
+-> Total time elapsed (hh:mm:ss.ms) 0:15:36.570082
+
+^^^^^^^^^^ FINISHED IDA HTF ^^^^^^^^^^

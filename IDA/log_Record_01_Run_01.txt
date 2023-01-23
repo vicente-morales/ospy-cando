@@ -1,0 +1,10 @@
+########## STARTING RUN #1 ##########
+-> IM: 0.2
+
+-> Creating Model
+-> Starting Gravity Analysis
+-> Starting RHA
+-> RHA Analysis Completed Successfully
+
+-> DT: 0.1732
+########## END OF RUN #1 ##########

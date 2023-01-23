@@ -1,0 +1,7 @@
+Evento: TOCOPILLA 2007
+Estación: MEJILLONES S/N 2794
+Canal: 1
+Direccion: EW
+Duración: 218.0
+Time Step: 0.005
+Puntos: 43600
