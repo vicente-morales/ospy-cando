@@ -83,9 +83,9 @@ time_start = datetime.now()
 time_actual = datetime.now()
 
 # Se definen los valores de la IM que se eligirán
-firstInt = 0.2   # This is the first intensity to run the elastic run (e.g. 0.05g)
-incrStep = 0.4   # This is the increment used during the hunting phase (e.g. 0.10g)
-maxRuns = int(5)  # This is the maximum number of runs to use (e.g. 20)
+firstInt = 0.1   # This is the first intensity to run the elastic run (e.g. 0.05g)
+incrStep = 0.1   # This is the increment used during the hunting phase (e.g. 0.10g)
+maxRuns = int(20)  # This is the maximum number of runs to use (e.g. 20)
 
 # Se recorren todos los registros
 for i in range(n_GM):

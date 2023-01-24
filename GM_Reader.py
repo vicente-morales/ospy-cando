@@ -47,7 +47,7 @@ def GMReader_UCh_v2(filename_list, in_dir=os.getcwd(), out_dir=os.getcwd()):
             data.write("Evento:" + " " + evento + "\n")
             data.write("Fecha:" + " " + fecha + "\n")
             data.write("Estación:" + " " + estacion + "\n")
-            data.write("Canal:" + " " + str(num_canal) + "\n")
+            # data.write("Canal:" + " " + str(num_canal) + "\n")
             data.write("Direccion:" + " " + direccion + "\n")
             data.write("Duración:" + " " + str(duracion) + "\n")
             data.write("Time Step:" + " " + str(timestep) + "\n")
