@@ -1,7 +1,7 @@
-/__pycache__
-/.spyproject
-/GM_Processed/
-/GM_Raw/
-/IDA/
-/Tcl/
-/Archivos Antiguos/
+__pycache__/
+.spyproject/
+GM_Processed/
+GM_Raw/
+IDA/
+Tcl/
+Archivos Antiguos/
