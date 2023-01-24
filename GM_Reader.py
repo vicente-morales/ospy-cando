@@ -120,7 +120,7 @@ def GMReader_VDC_tar(filename_list, event_names, in_dir=os.getcwd(), out_dir=os.
         end = False         
         while end == False:        
             linea_est_dir = lineas[i + 1].strip().split(',')
-            estacion = linea_est_dir[0].strip()
+            estacion = linea_est_dir[0].strip().replace(" ","-")
             dir_str_no = ['AST', 'EST', 'ORTH', 'OUTH', 'ERTICAL', '-'] 
             direccion = linea_est_dir[2].strip()
             for borrar in dir_str_no:  # Se simplifica el nombre de la direcc
@@ -128,7 +128,7 @@ def GMReader_VDC_tar(filename_list, event_names, in_dir=os.getcwd(), out_dir=os.
             
             timestep_dtype_str = lineas[i + 3].strip().split()
             timestep = 1 / float(timestep_dtype_str[0][timestep_dtype_str[0].index('=') + 1 : ])
-            data_type = timestep_dtype_str[-1][timestep_dtype_str[-1].index('=') + 1 : ]
+            # data_type = timestep_dtype_str[-1][timestep_dtype_str[-1].index('=') + 1 : ]
             
             line_npts_units = lineas[i + 4].strip().split()
             try:
@@ -138,24 +138,21 @@ def GMReader_VDC_tar(filename_list, event_names, in_dir=os.getcwd(), out_dir=os.
             duracion = n_puntos * timestep
             units = line_npts_units[-3].strip().replace(',','').replace('/', ' & ')
             
-            data_txt_name = "data_" + evento.replace(" ","") + "_" + estacion.replace(
-                " ","_") + "_" + direccion + ".txt"
+            data_txt_name = "data_" + evento + "_" + estacion + "_" + direccion + ".txt"
             data_txt_name = os.path.join(out_dir, data_txt_name.replace("/",""))
             data = open(data_txt_name,'w+')
 
             data.write("Evento:" + " " + evento + "\n")
             data.write("Estación:" + " " + estacion + "\n")
-            data.write("Canal:" + " " + str(num_canal) + "\n")
             data.write("Direccion:" + " " + direccion + "\n")
             data.write("Duración:" + " " + str(duracion) + "\n")
             data.write("Time Step:" + " " + str(timestep) + "\n")
             data.write("Puntos:" + " " + str(n_puntos) + "\n")
+            data.write("Unidades:" + " " + units + "\n")
             data.close()
             
-            i += 45
-            linea = lineas[i].strip().split()
-            acc = np.zeros(int(linea[0]))
-            i += 1
+            i += 5
+            acc = np.zeros(n_puntos)
             linea = lineas[i].strip().split()
             j = 0
             error = False
@@ -172,14 +169,13 @@ def GMReader_VDC_tar(filename_list, event_names, in_dir=os.getcwd(), out_dir=os.
                 i += 1
                 if i <= n_lineas:
                     linea = lineas[i].strip().split()
-            GM_txt_name = "GM_" + evento.replace(" ","") + "_" + estacion.replace(
-                " ","_") + "_" + direccion + ".txt"
+            GM_txt_name = "GM_" + evento + "_" + estacion + "_" + direccion + ".txt"
             GM_txt_name = os.path.join(out_dir, GM_txt_name.replace("/",""))
             np.savetxt(GM_txt_name, acc, newline=" ")
             # np.savetxt(GM_txt_name,acc.reshape(1, acc.shape[0]))
             
-            vel = np.zeros(int(linea[0]))
-            i += 1
+            vel = np.zeros(n_puntos)
+            i += 5
             linea = lineas[i].strip().split()
             j = 0
             error = False
@@ -197,12 +193,12 @@ def GMReader_VDC_tar(filename_list, event_names, in_dir=os.getcwd(), out_dir=os.
                 if i <= n_lineas:
                     linea = lineas[i].strip().split()
             
-            disp = np.zeros(int(linea[0]))
-            i += 1
+            disp = np.zeros(n_puntos)
+            i += 5
             linea = lineas[i].strip().split()
             j = 0
             error = False
-            while error == False and linea[0] != "/&":
+            while error == False:
                 try:
                     elems = np.array(linea,dtype=float)
                 except ValueError:
@@ -215,4 +211,6 @@ def GMReader_VDC_tar(filename_list, event_names, in_dir=os.getcwd(), out_dir=os.
                 i += 1
                 if i <= n_lineas:
                     linea = lineas[i].strip().split()
-            i += 1
+            
+            if linea[-1] == 'Center.':
+                end = True

@@ -1,0 +1,7 @@
+Evento: VALPARAISO-1985
+Estación: MELIPILLA
+Direccion: NS
+Duración: 79.36
+Time Step: 0.005
+Puntos: 15872
+Unidades: CM & SEC

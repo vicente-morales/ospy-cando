@@ -1,9 +1,14 @@
 from GM_Reader import GMReader_UCh_v2
+from GM_Reader import GMReader_VDC_tar
 import os
 
 # Se generan todos los registros en la carpeta
 list_GM = os.listdir('GM_Raw')
-GMReader_UCh_v2(list_GM, in_dir='GM_Raw', out_dir='GM_Processed')
+for gm in list_GM:
+    if gm[-2:] == "v2":
+        GMReader_UCh_v2([gm], in_dir='GM_Raw', out_dir='GM_Processed')
+    elif gm[-3:] == 'tar':
+        GMReader_VDC_tar([gm], ['VALPARAISO-1985'], in_dir='GM_Raw', out_dir='GM_Processed')
 
 # Se seleccionan los archivos que se utilizan para el IDA -> descartar verticales
 list_GM_tot = os.listdir('GM_Processed')
