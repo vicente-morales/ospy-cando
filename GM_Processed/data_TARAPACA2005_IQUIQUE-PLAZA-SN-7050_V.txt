@@ -1,7 +1,0 @@
-Evento: TARAPACA 2005
-Estación: IQUIQUE PLAZA S/N 7050
-Canal: 2
-Direccion: V
-Duración: 61.715
-Time Step: 0.005
-Puntos: 12343

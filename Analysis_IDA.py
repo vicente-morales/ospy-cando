@@ -35,7 +35,7 @@ for gm in range(len(registros)):
     fid_data.close()
     # dict_dt[GM_name] = float(GM_data[5].strip().split()[2])
     # dict_Npts[GM_name] = int(GM_data[6].strip().split()[1])
-    dict_GM[GM_name] = {'acc': np.loadtxt('GM_Processed/GM_' + GM_name + '.txt', ndmin=2), 
+    dict_GM[GM_name] = {'acc': np.loadtxt('GM_Processed/acc_' + GM_name + '.txt', ndmin=2), 
                         'dt': float(GM_data[5].strip().split()[2]), 
                         'Npts': int(GM_data[6].strip().split()[1])}
 fid_GM.close()

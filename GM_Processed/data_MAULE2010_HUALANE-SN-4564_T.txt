@@ -1,7 +1,0 @@
-Evento: MAULE 2010
-Estación: HUALANE S/N 4564
-Canal: 3
-Direccion: T
-Duración: 144.055
-Time Step: 0.005
-Puntos: 28811

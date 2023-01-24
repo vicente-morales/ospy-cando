@@ -1,7 +1,0 @@
-Evento: TARAPACA 2005
-Estación: POCONCHILE S/N 2798
-Canal: 3
-Direccion: Z
-Duración: 196.0
-Time Step: 0.005
-Puntos: 39200

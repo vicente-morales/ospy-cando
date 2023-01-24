@@ -8,15 +8,15 @@ for gm in list_GM:
     if gm[-2:] == "v2":
         GMReader_UCh_v2([gm], in_dir='GM_Raw', out_dir='GM_Processed')
     elif gm[-3:] == 'tar':
-        GMReader_VDC_tar([gm], ['VALPARAISO-1985'], in_dir='GM_Raw', out_dir='GM_Processed')
+        GMReader_VDC_tar([gm], ['VALPARAISO_1985'], in_dir='GM_Raw', out_dir='GM_Processed')
 
 # Se seleccionan los archivos que se utilizan para el IDA -> descartar verticales
 list_GM_tot = os.listdir('GM_Processed')
 list_GM_IDA = []
 fid = open('IDA/AA_selected_GM.txt', 'w')
 for gm in list_GM_tot:
-    if gm.find('_V.txt') == -1 and gm.find('GM_') != -1 and gm.find('_Z.txt') == -1:
-        print(gm[3:-4], file=fid)
+    if gm.find('_V.txt') == -1 and gm.find('acc_') != -1 and gm.find('_Z.txt') == -1:
+        print(gm[4:-4], file=fid)
 fid.close()
 
 # Borrar la última linea en blanco
