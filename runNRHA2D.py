@@ -11,7 +11,7 @@
 import openseespy.opensees as ops
 from check_collapse import check_collapse
 
-def runNRHA(Dt, Tmax, ListNodesDrift=[], dict_elems=[], tags_walls=[], dict_walls_floor=[], 
+def runNRHA2D(Dt, Tmax, ListNodesDrift=[], dict_elems=[], tags_walls=[], dict_walls_floor=[], 
             WallElPerStory = 0, dict_mats=[], log=[]):
     # --------------------------------------------------
     # Description of Parameters

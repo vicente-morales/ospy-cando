@@ -7,7 +7,7 @@ from getSa import getSa
 from MODEL import build_model
 from Analysis_Modal import modal_analysis
 from Analysis_Gravity import gravity_analysis
-from runNRHA import runNRHA
+from runNRHA2D import runNRHA2D
 from datetime import datetime
 
 ops.wipe()
@@ -164,7 +164,7 @@ for i in range(n_GM):
             ops.timeSeries('Path', 2, '-dt', dt, '-values', *acc_GM, '-factor', sf)
             ops.pattern('UniformExcitation', 400, 1, '-accel', 2, '-fact', 1)
             cIndex, controlTime, max_drift_techo \
-                = runNRHA(dt, dur, ListNodesDrift, dict_elems, tags_walls, dict_walls_floor, 
+                = runNRHA2D(dt, dur, ListNodesDrift, dict_elems, tags_walls, dict_walls_floor, 
                           WallElPerStory, dict_mats)
             # j += 1
             
@@ -259,7 +259,7 @@ for i in range(n_GM):
             ops.timeSeries('Path', 2, '-dt', dt, '-values', *acc_GM, '-factor', sf)
             ops.pattern('UniformExcitation', 400, 1, '-accel', 2, '-fact', 1)
             cIndex, controlTime, max_drift_techo \
-                = runNRHA(dt, dur, ListNodesDrift, dict_elems, tags_walls, dict_walls_floor, 
+                = runNRHA2D(dt, dur, ListNodesDrift, dict_elems, tags_walls, dict_walls_floor, 
                           WallElPerStory, dict_mats)           
 
             # Check for convergence
@@ -353,7 +353,7 @@ for i in range(n_GM):
             ops.timeSeries('Path', 2, '-dt', dt, '-values', *acc_GM, '-factor', sf)
             ops.pattern('UniformExcitation', 400, 1, '-accel', 2, '-fact', 1)
             cIndex, controlTime, max_drift_techo \
-                = runNRHA(dt, dur, ListNodesDrift, dict_elems, tags_walls, dict_walls_floor, 
+                = runNRHA2D(dt, dur, ListNodesDrift, dict_elems, tags_walls, dict_walls_floor, 
                           WallElPerStory, dict_mats)           
             j += 1
             
