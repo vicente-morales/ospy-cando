@@ -28,7 +28,7 @@ def GMReader_UCh_V2(filename_list, in_dir=os.getcwd(), out_dir=os.getcwd()):
             n_puntos = int(round(duracion / timestep))
             
             data_txt_name = "data_" + evento.replace(" ","") + "_" + estacion.replace(
-                " ","_") + "_" + direccion + ".txt"
+                " ","-") + "_" + direccion + ".txt"
             data_txt_name = os.path.join(out_dir, data_txt_name.replace("/",""))
             data = open(data_txt_name,'w+')
 
@@ -118,24 +118,25 @@ def GMReader_VDC_tar(filename_list, event_names, in_dir=os.getcwd(), out_dir=os.
 
         i = 0
         end = False         
-        while end != True:        
+        while end == False:        
             linea_est_dir = lineas[i + 1].strip().split(',')
-            estacion = linea_est_dir.strip()
-            dir_str_no = ['AST', 'EST', 'ORTH', 'OUTH', '-'] 
-            direccion = linea_est_dir[2].strip().replace('AST',"").replace('EST',"")
+            estacion = linea_est_dir[0].strip()
+            dir_str_no = ['AST', 'EST', 'ORTH', 'OUTH', 'ERTICAL', '-'] 
+            direccion = linea_est_dir[2].strip()
+            for borrar in dir_str_no:  # Se simplifica el nombre de la direcc
+                direccion = direccion.replace(borrar, "")
             
-
-
-            direccion_linea = lineas[7+i].strip().split()
-            num_canal = int(direccion_linea[1].strip()[0])
-            direccion = direccion_linea[2]
-            duracion_linea = lineas[11+i].strip().split()
+            timestep_dtype_str = lineas[i + 3].strip().split()
+            timestep = 1 / float(timestep_dtype_str[0][timestep_dtype_str[0].index('=') + 1 : ])
+            data_type = timestep_dtype_str[-1][timestep_dtype_str[-1].index('=') + 1 : ]
+            
+            line_npts_units = lineas[i + 4].strip().split()
             try:
-                duracion = float(duracion_linea[-2])
+                n_puntos = int(line_npts_units[3].strip().replace(',',''))
             except ValueError:
-                duracion = float(duracion_linea[-2][1:])
-            timestep = float(lineas[16+i].strip().split()[4])
-            n_puntos = int(round(duracion / timestep))
+                n_puntos = int(line_npts_units[2].strip()[7:].replace(',',''))
+            duracion = n_puntos * timestep
+            units = line_npts_units[-3].strip().replace(',','').replace('/', ' & ')
             
             data_txt_name = "data_" + evento.replace(" ","") + "_" + estacion.replace(
                 " ","_") + "_" + direccion + ".txt"
