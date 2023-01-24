@@ -310,7 +310,7 @@ for i in range(n_GM):
             
             # We go to the end of the list minus 1 because, 
             # if not we would be filling between a noncollapsing and a collapsing run
-            for ii in range(len(IMlist) - 1):
+            for ii in range(1, len(IMlist) - 1):
                 temp = IMlist[ii] - IMlist[ii - 1]
                 if temp > gap:
                     gap = temp # Update to maximum gap
