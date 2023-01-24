@@ -2,7 +2,7 @@ import numpy as np
 import os
 
 # GM from http://terremotos.ing.uchile.cl/
-def GMReader_UCh_V2(filename_list, in_dir=os.getcwd(), out_dir=os.getcwd()):
+def GMReader_UCh_v2(filename_list, in_dir=os.getcwd(), out_dir=os.getcwd()):
     for filename in filename_list:
         file = open(os.path.join(in_dir, filename), "r")
         lineas = file.readlines()
@@ -62,7 +62,7 @@ def GMReader_UCh_V2(filename_list, in_dir=os.getcwd(), out_dir=os.getcwd()):
                 if i <= n_lineas:
                     linea = lineas[i].strip().split()
             GM_txt_name = "GM_" + evento.replace(" ","") + "_" + estacion.replace(
-                " ","_") + "_" + direccion + ".txt"
+                " ","-") + "_" + direccion + ".txt"
             GM_txt_name = os.path.join(out_dir, GM_txt_name.replace("/",""))
             np.savetxt(GM_txt_name, acc, newline=" ")
             # np.savetxt(GM_txt_name,acc.reshape(1, acc.shape[0]))

@@ -1,9 +1,9 @@
-from GM_Reader import GMReader_UCh_V2
+from GM_Reader import GMReader_UCh_v2
 import os
 
 # Se generan todos los registros en la carpeta
 list_GM = os.listdir('GM_Raw')
-GMReader_UCh_V2(list_GM, in_dir='GM_Raw', out_dir='GM_Processed')
+GMReader_UCh_v2(list_GM, in_dir='GM_Raw', out_dir='GM_Processed')
 
 # Se seleccionan los archivos que se utilizan para el IDA -> descartar verticales
 list_GM_tot = os.listdir('GM_Processed')
