@@ -156,6 +156,7 @@ def GMReader_VDC_tar(filename_list, event_names, in_dir=os.getcwd(), out_dir=os.
             data = open(data_txt_name,'w+')
 
             data.write("Evento:" + " " + evento + "\n")
+            data.write("Fecha:" + " " + " " + "\n")
             data.write("Estación:" + " " + estacion + "\n")
             data.write("Direccion:" + " " + direccion + "\n")
             data.write("Duración:" + " " + str(duracion) + "\n")
